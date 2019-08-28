@@ -14,10 +14,6 @@
         }],
         "@babel/plugin-transform-runtime",
         "@babel/plugin-syntax-dynamic-import",
-        ["import", {
-            "libraryName": "antd",
-            "style": "css"
-        }],
         "add-module-exports"
     ]
 }
