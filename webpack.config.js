@@ -5,7 +5,7 @@ const dev_env = process.env.NODE_ENV == 'dev';
 const srcPath = path.resolve(__dirname, '../../')
 
 module.exports = {
-    entry: ['./src/index.jsx'],
+    entry: ['./src/index.js'],
     mode: 'development',
     output: {
         path: path.resolve(__dirname, 'lib'),

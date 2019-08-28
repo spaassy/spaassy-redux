@@ -149,7 +149,7 @@ export default function combineReducers(reducersMap) {
 		}
 	})
 
-	return function combination(state = {}, action) {
+	return function combination(ostate = {}, action) {
 
 		let namespace = action.namespace || null
 

@@ -4,7 +4,8 @@
   "description": "SpaAssy-Redux",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cross-env NODE_ENV=pro webpack"
   },
   "repository": {
     "type": "git",
@@ -45,6 +46,7 @@
     "react-redux": "^7.1.1",
     "redux": "^4.0.4",
     "redux-promise": "^0.6.0",
-    "redux-promise-middleware": "^6.1.1"
+    "redux-promise-middleware": "^6.1.1",
+    "webpack-cli": "^3.3.7"
   }
 }
