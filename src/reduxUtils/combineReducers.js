@@ -207,6 +207,10 @@ export default function combineReducers(reducersMap) {
 			}
 		}
 
+		console.log(hasChanged ? {
+			...nextState
+		} : state, hasChanged)
+
 		return hasChanged ? {
 			...nextState
 		} : state
