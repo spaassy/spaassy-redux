@@ -196,7 +196,9 @@ export default function combineReducers(reducersMap) {
 			for (let i = 0; i < finalReducerKeys.length; i++) {
 				const key = finalReducerKeys[i]
 				const reducer = finalReducers[namespace][key]
+				console.log(key)
 				const previousStateForKey = state[namespace][key]
+				console.log(previousStateForKey)
 				const nextStateForKey = reducer(previousStateForKey, action)
 				if (typeof nextStateForKey === 'undefined') {
 					const errorMessage = getUndefinedStateErrorMessage(key, action)
