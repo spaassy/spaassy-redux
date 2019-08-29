@@ -4,9 +4,8 @@ import combineReducers from './reduxUtils/combineReducers'
 import createReducer from './createReducer'
 import promiseMiddleware from './reduxPromiseMiddleware'
 
-export {
-    bindActionCreators,
-    combineReducers,
-    createReducer,
-    promiseMiddleware
-}
+
+exports = bindActionCreators
+exports = combineReducers
+exports = createReducer
+exports = promiseMiddleware
