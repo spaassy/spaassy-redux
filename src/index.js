@@ -4,7 +4,7 @@ import combineReducers from './reduxUtils/combineReducers'
 import createReducer from './createReducer'
 import promiseMiddleware from './reduxPromiseMiddleware'
 
-module.exports = {
+export {
     bindActionCreators,
     combineReducers,
     createReducer,
