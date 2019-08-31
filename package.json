@@ -2,7 +2,7 @@
   "name": "spaassy-redux",
   "version": "1.0.0",
   "description": "SpaAssy-Redux",
-  "main": "lib/spaassy-redux.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "cross-env NODE_ENV=pro webpack"

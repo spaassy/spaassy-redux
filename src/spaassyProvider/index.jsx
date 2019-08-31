@@ -4,7 +4,7 @@ import configureStore from './configureStore'
 import combineReducers from '../reduxUtils/combineReducers'
 import SpaAsyRegister from '../spaassyRegister'
 
-import rootReducers from '@store'
+import rootReducers from '../../../src/store'
 
 const SpaAssyProvider = (props) => {
     let store = configureStore(props.namespace, { ...rootReducers })
