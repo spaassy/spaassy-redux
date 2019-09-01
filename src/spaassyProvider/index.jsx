@@ -31,6 +31,7 @@ class SpaAssyProvider extends React.Component {
     }
 
     render() {
+        console.log(window,'window')
         return (
             <Provider store={this.store}>
                 {
