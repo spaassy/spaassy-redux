@@ -4,7 +4,7 @@ import {
 } from 'redux'
 
 import promiseMiddleware from '../reduxPromiseMiddleware'
-import rootReducer from './combinReducers'
+import rootReducer from './combineReducers'
 
 export default function configureStore(name, reducers, initialState) {
     const store = createStore(
