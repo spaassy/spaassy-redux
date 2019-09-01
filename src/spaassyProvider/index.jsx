@@ -31,14 +31,12 @@ class SpaAssyProvider extends React.Component {
     }
 
     render() {
-        console.log(window,'window')
         return (
             <Provider store={this.store}>
                 {
                     this.state.updataRouter ?
                         this.props.children : (
                             <span>
-                                12312
                                 {this.props.children}
                             </span>
                         )
