@@ -7,7 +7,7 @@
 class SpaAssyRegister {
     namespace = null
     routers = []
-    reducers = []
+    reducers = {}
 
     constructor(option) {
         if (option) {
