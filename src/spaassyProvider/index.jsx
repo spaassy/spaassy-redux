@@ -38,6 +38,7 @@ class SpaAssyProvider extends React.Component {
                     this.state.updataRouter ?
                         this.props.children : (
                             <span>
+                                12312
                                 {this.props.children}
                             </span>
                         )
