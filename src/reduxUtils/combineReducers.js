@@ -173,7 +173,7 @@ export default function combineReducers(reducersMap) {
 			if (ostate && ostate[namespace]) {
 				state = ostate
 			} else {
-				state[namespace] = ostate
+				state[namespace] = {}
 			}
 
 			if (shapeAssertionError) {
