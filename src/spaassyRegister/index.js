@@ -75,7 +75,7 @@ class SpaAssyRegister {
             return
         }
 
-        window.spaassy.updataStore(namespace, {
+        window.subProject.updataStore(namespace, {
             ...reducers
         })
     }
@@ -88,7 +88,7 @@ class SpaAssyRegister {
         window.subProject.reducers[this.namespace] = {
             ...this.reducers
         }
-        window.spaassy.updataStore(this.namespace, {
+        window.subProject.updataStore(this.namespace, {
             ...this.reducers
         })
     }
