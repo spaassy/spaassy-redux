@@ -3,7 +3,7 @@ import { Provider } from 'react-redux'
 import configureStore from './configureStore'
 import combineReducers from './combineReducers'
 import SpaAsyRegister from '../spaassyRegister'
-
+import Connect from '../spaassyConnect'
 
 const SpaAssyProvider = (props) => {
     let store = configureStore(props.namespace, { ...props.rootReducers })
@@ -13,6 +13,7 @@ const SpaAssyProvider = (props) => {
             store.replaceReducer(combineReducers(namespace, reducers))
         })
         spaassyRegister.addReducerAndNoRegister(props.namespace, { ...props.rootReducers })
+        window.subProject.SpaAssyConnect = Connect
     }
     return (
         <Provider store={store}>
