@@ -35,7 +35,11 @@ class SpaAssyProvider extends React.Component {
             <Provider store={this.store}>
                 {
                     this.state.updataRouter ?
-                        this.props.children : null
+                        this.props.children : (
+                            <span>
+                                {this.props.children}
+                            </span>
+                        )
                 }
             </Provider>
         )
