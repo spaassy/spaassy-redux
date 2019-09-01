@@ -58,9 +58,7 @@ class SpaAssyRegister {
             return
         }
 
-        window.subProject.routers[this.namespace] = {
-            ...this.routers
-        }
+        window.subProject.routers[this.namespace] = [...this.routers]
     }
 
     addReducerAndNoRegister = (namespace, reducers) => {
