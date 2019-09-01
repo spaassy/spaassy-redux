@@ -118,6 +118,7 @@ let unexpectedKeyCache
 let shapeAssertionError
 
 export default function combineReducers(reducersMap) {
+	console.log(reducersMap)
 
 	Object.keys(reducersMap).map(o => {
 		let reducers = reducersMap[o]
@@ -150,6 +151,8 @@ export default function combineReducers(reducersMap) {
 	})
 
 	return function combination(ostate = {}, action) {
+
+		console.log(ostate, action)
 
 		let namespace = action.namespace || null
 
