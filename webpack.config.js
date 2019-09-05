@@ -14,26 +14,26 @@ module.exports = {
         library: "spaassy-redux",
         libraryTarget: "umd"
     },
-    // externals: {
-    //     "lodash": {
-    //         commonjs: "lodash",
-    //         commonjs2: "lodash",
-    //         amd: "lodash",
-    //         root: "_"
-    //     },
-    //     "react": {
-    //         commonjs: "react",
-    //         commonjs2: "react",
-    //         amd: "react",
-    //         root: "react"
-    //     },
-    //     "react-redux": {
-    //         commonjs: "react-redux",
-    //         commonjs2: "react-redux",
-    //         amd: "react-redux",
-    //         root: "react-redux"
-    //     }
-    // },
+    externals: {
+        "lodash": {
+            commonjs: "lodash",
+            commonjs2: "lodash",
+            amd: "lodash",
+            root: "_"
+        },
+        "react": {
+            commonjs: "react",
+            commonjs2: "react",
+            amd: "react",
+            root: "react"
+        },
+        "react-redux": {
+            commonjs: "react-redux",
+            commonjs2: "react-redux",
+            amd: "react-redux",
+            root: "react-redux"
+        }
+    },
     module: {
         rules: [{
             test: /(\.jsx|\.js)$/,
