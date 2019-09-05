@@ -6,6 +6,7 @@ const srcPath = path.resolve(__dirname, '../../')
 
 module.exports = {
     entry: ['./src/index.js'],
+    devtool: 'cheap-module-source-map',
     mode: 'development',
     output: {
         path: path.resolve(__dirname, 'lib'),

@@ -16,7 +16,7 @@ const AsyncComponent = (namespace) => (importComponent) => class extends Compone
 	render() {
 		const C = this.state.component;
 		return (
-			<div className={`${namespace}_class`}>
+			<div className={namespace ? `${namespace}_class` : null}>
 				{
 					C ? <C {...this.props} /> : null
 				}
