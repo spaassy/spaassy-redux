@@ -1,13 +1,13 @@
 const path = require('path');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-const dev_env = process.env.NODE_ENV == 'dev';
+const dev_env = process.env.NODE_ENV == 'development';
 
 const srcPath = path.resolve(__dirname, '../../')
 
 module.exports = {
     entry: ['./src/index.js'],
     devtool: 'cheap-module-source-map',
-    mode: 'development',
+    mode: dev_env ? 'development' : 'production',
     output: {
         path: path.resolve(__dirname, 'lib'),
         filename: 'spaassy-redux.js',
