@@ -1,10 +1,20 @@
 import { connect } from 'react-redux'
 import bindActionCreators from '../reduxUtils/bindActionCreators'
 
-export default (namespace) => {
+export default (namespace, ...otherNameSpace) => {
     return (stateKey, action) => connect(
         ostate => {
-            let state = Object.assign({}, ostate[namespace])
+            let obj = {
+                ...ostate[namespace]
+            }
+            otherNameSpace.map(item => {
+                obj = {
+                    ...obj,
+                    ...ostate[item]
+                }
+                return item
+            })
+            let state = Object.assign({}, obj)
             if (typeof stateKey == 'function') {
                 return stateKey(state)
             }
