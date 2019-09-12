@@ -1,4 +1,4 @@
-#### spaassy-redux 是spaassy的核心依赖。基于react-redux并对其进行了改写。
+### spaassy-redux 是spaassy的核心依赖。基于react-redux并对其进行了改写。
 
 #### spaassy-redux对外暴露以下API：
 
