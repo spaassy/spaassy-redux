@@ -10,7 +10,7 @@ const createReducer = (initialparams, reducerMap) => {
             }
         }
 
-        return reducer ? reducer(params, action.payload ? action.payload : {}, action.params) : params
+        return reducer ? reducer(params, typeof action.payload !== 'undefined' ? action.payload : {}, action.params) : params
     }
 }
 
